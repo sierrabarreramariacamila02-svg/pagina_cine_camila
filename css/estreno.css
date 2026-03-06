@@ -1,0 +1,144 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #000;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a.active {
+    color: #e50914;
+    font-weight: bold;
+}
+
+.hero-estrenos {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-estrenos h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-estrenos p {
+    color: #999;
+}
+
+/* Cuadrícula de Cartas */
+.grid-estrenos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 50px 80px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta-estreno {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-estreno:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(229, 9, 20, 0.2);
+}
+
+.tarjeta-estreno img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-estreno {
+    padding: 20px;
+}
+
+.info-estreno h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.genero {
+    color: #e50914;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fecha {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.btn-trailer {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #e50914;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-trailer:hover {
+    background-color: #e50914;
+}
+
+/* Badges (Etiquetas) */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #333;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.badge.destacado {
+    background-color: #e50914;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #000;
+    color: #555;
+    border-top: 1px solid #222;
+}

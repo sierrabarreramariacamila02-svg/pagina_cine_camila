@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CineMax</title>
+    <link rel="stylesheet" href="/css/contactos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="icono-claqueta">🎬</span> CineMax
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Cartelera</a></li>
+                <li><a href="/estreno.html">Estrenos</a></li>
+                <li><a href="#" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="encabezado-contacto">
+            <h1>Contáctanos</h1>
+            <p>Estamos para escucharte</p>
+        </section>
+
+        <div class="fila-contacto">
+            <div class="col-formulario">
+                <form action="#">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="text" placeholder="Asunto">
+                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+            </div>
+
+            <div class="col-info">
+                <div class="info-item">
+                    <span class="icono">📞</span>
+                    <div>
+                        <strong>Teléfono:</strong><br>
+                        +123 456 7890
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icono">✉️</span>
+                    <div>
+                        <strong>Email:</strong><br>
+                        contacto@cinemax.com
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icono">📍</span>
+                    <div>
+                        <strong>Dirección:</strong><br>
+                        Calle Falsa 123, Ciudad del Cine
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila-extra">
+            <div class="col-ubicacion">
+                <h3>Ubicación</h3>
+                <div class="mapa-dummy">
+                    <div class="pin">📍</div>
+                </div>
+            </div>
+
+            <div class="col-faq">
+                <h3>Preguntas Frecuentes</h3>
+                <details>
+                    <summary>¿Cómo comprar boletos? <span>⌄</span></summary>
+                    <p>Puedes comprarlos en taquilla o a través de nuestra App oficial.</p>
+                </details>
+                <details>
+                    <summary>¿Precios? <span>⌄</span></summary>
+                    <p>Los precios varían según la sala y el día. Los miércoles son de descuento.</p>
+                </details>
+                <details>
+                    <summary>¿Horarios? <span>⌄</span></summary>
+                    <p>Nuestras funciones comienzan desde las 10:00 AM hasta la medianoche.</p>
+                </details>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 CineMax | Todos los derechos reservados
+    </footer>
+
+</body>
+</html>
