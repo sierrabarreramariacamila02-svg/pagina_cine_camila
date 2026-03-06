@@ -1,0 +1,108 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:black;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:red;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav li{
+margin-left:20px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+}
+
+nav a:hover{
+color:red;
+}
+
+/* TITULO */
+
+.titulo{
+text-align:center;
+padding:40px;
+font-size:28px;
+}
+
+/* CARTELERA */
+
+.cartelera{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+padding:40px;
+}
+
+.card{
+background:#1c1c1c;
+padding:15px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.card p{
+margin-bottom:10px;
+}
+
+.card button{
+padding:10px 15px;
+border:none;
+background:red;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.card button:hover{
+background:#cc0000;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+}

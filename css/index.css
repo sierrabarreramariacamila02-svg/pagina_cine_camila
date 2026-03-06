@@ -1,0 +1,154 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:black;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:red;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav li{
+margin-left:20px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+}
+
+nav a:hover{
+color:red;
+}
+
+.gif-video{
+width:40%;
+/* bajar un poco debajo del header */
+margin-top:20px;
+} 
+.banner{
+height:350px;
+position:relative; /* required for absolute video */
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+overflow:hidden;
+}
+
+/* make video fill banner and sit behind text */
+.banner .gif-video{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:1;
+} 
+
+.banner h1{
+font-size:45px;
+margin-bottom:10px;
+position: relative;
+z-index: index 3; /* texto encima del video */
+}
+
+.banner p{
+margin-bottom:20px; /* acercar al botón */
+}
+
+.banner button{
+padding:12px 20px;
+background:red;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+text-align: center;
+}
+
+.banner button:hover{
+background:#cc0000;
+}
+
+.btn-center{
+  text-align:center;
+  margin:20px 0;
+}
+
+.btn-center button{
+  padding:12px 20px;
+  background:red;
+  border:none;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* SECCIONES */
+
+.destacadas, .estrenos{
+padding:40px;
+text-align:center;
+}
+
+.peliculas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:#1c1c1c;
+padding:15px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card h3{
+margin-top:10px;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+margin-top:30px;
+}
