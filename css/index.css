@@ -152,3 +152,88 @@ padding:20px;
 background:black;
 margin-top:30px;
 }
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav li {
+        margin-left: 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+    .banner button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .gif-video {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .destacadas, .estrenos {
+        padding: 20px;
+    }
+
+    .peliculas {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    .peliculas {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}

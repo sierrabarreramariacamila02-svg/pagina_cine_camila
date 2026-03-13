@@ -142,3 +142,77 @@ footer {
     color: #555;
     border-top: 1px solid #222;
 }
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .hero-estrenos {
+        padding: 40px 20px;
+    }
+
+    .hero-estrenos h1 {
+        font-size: 2rem;
+    }
+
+    .grid-estrenos {
+        padding: 0 20px 40px 20px;
+        gap: 20px;
+    }
+
+    .tarjeta-estreno {
+        max-width: 100%;
+    }
+
+    .info-estreno {
+        padding: 15px;
+    }
+
+    .info-estreno h3 {
+        font-size: 1rem;
+    }
+
+    .btn-trailer {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-estrenos h1 {
+        font-size: 1.5rem;
+    }
+
+    .grid-estrenos {
+        grid-template-columns: 1fr;
+        padding: 0 10px 20px 10px;
+    }
+
+    .badge {
+        font-size: 0.6rem;
+        padding: 4px 8px;
+    }
+}
